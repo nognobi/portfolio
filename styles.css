@@ -1,7 +1,7 @@
 /*start navbar*/
 .container{
     width: 90%;
-    height: 50px;
+    height: fit-content;
     margin: auto;
 }
 .textsection h1{
@@ -173,7 +173,7 @@ body{
     text-align: center;
 }
 .aboutparent{
-   
+    height: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -191,7 +191,7 @@ body{
 .skills p{
     font-size: 1.5rem;
     color: #575757;
-    font-weight: 600;
+    font-weight: 550;
 }
 .frontend{
     display: flex;
@@ -282,6 +282,110 @@ body{
     transform: scale(1.02);
 }
 /*End about section*/
+/*Start project section*/
+.projectparent{
+    width:100%;
+    height: fit-content;
+   display: flex;
+   grid-gap: 5%;
+}
+.projecttext{
+    text-align: center;
+    margin-top: 10%;
+}
+.project{
+    width: fit-content;
+    height: fit-content;
+    padding: 2%;
+    border-radius: 8px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: ease 0.2s;
+}
+.project h2{
+    text-align: center;
+    color: #575757;
+}
+.project p{
+    text-align: center;
+    color: #575757;
+    height: 4.5rem;
+}
+.projectread{
+    width: 6rem;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: auto;
+    color: white;
+    margin-top: 2rem;
+    height: 2rem;
+    background: rgb(30, 159, 171);
+    
+}
+.projectread a{
+    color: white;
+    text-decoration: none;
+}
+.project:hover{
+    transform: scale(1.02);
+    transition: ease-in 0.2s;
+}
+.contact {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+.findme{
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+    border-radius: 5px;
+    transition: ease-in 0.2s;
+}
+.findmepare{
+    display: flex;
+    justify-content: space-between;
+}
+.findme:hover{
+    background: #575757;
+    color: white;
+}
+.form{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+#name{
+    width: 12rem;
+    height: 2rem;
+    text-indent: 5px;
+    border-radius: 5px;
+    border:black 1px rgba(0, 0, 0, 0.521);
+}
+.Footersection h1{
+    color: black;
+    margin-top: 5rem;
+}
+.getintouchfooter{
+    width: 100%;
+    display: flex;
+    grid-gap: 2%;
+    justify-content: center;
+    margin: auto;
+}
+.Footersection p{
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 5rem;
+}
+/*Start project section*/
+
 @media only screen and (max-width: 620px){
     .navbarparent{
         display: flex;
@@ -339,6 +443,7 @@ body{
         padding: 2rem;
         color: #575757;
        font-size: 1.3rem;
+       text-align: center;
     }
     .container{
         width: 95%;
@@ -362,6 +467,23 @@ body{
     }
     .flexheight{
         height: 500px;
+    }
+    .projectparent{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 2rem;
+    }
+    .project{
+        width: 90%;
+        margin: auto;
+        height: max-content;
+    }
+    .projectread{
+        margin-bottom: 2%;
+    }
+    .projecttext{
+        font-size: 1.5rem;
+        gr
     }
 }
 /* @media only screen and (max-width: 1000px){
